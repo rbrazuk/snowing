@@ -1,0 +1,10 @@
+.icons-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.icons-bar i {
+    margin: 0 8px;
+}
