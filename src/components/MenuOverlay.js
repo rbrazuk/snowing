@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 import './MenuOverlay.css';
 
 class MenuOverlay extends Component {
+    constructor(props) {
+        super(props);
+        console.log(props);
+    }
     render() {
-        if (this.props.show) {
+        
+        if (this.props.showMenu) {
             return (
                 <div className='menu-overlay'>
                     <ul className='menu'>
@@ -22,4 +28,10 @@ class MenuOverlay extends Component {
     }
 }
 
-export default MenuOverlay;
+function mapStateToProps(state) {
+    return {showMenu: state.showMenu};
+}
+
+
+
+export default connect(mapStateToProps)(MenuOverlay);

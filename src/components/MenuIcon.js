@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import './MenuIcon.css';
+import { connect } from 'react-redux';
+import {toggleMenu} from '../actions/index';
 
 class MenuIcon extends Component {
     constructor(props) {
         super(props);
 
         this.toggleMenu = this.toggleMenu.bind(this);
+        //console.log(this.props);
     }
 
     toggleMenu() {
-        //this.setState(state => ({showMenu: !state.showMenu}));
-        console.log("clicked");
-        alert("clicked");
-      }
+        console.log(this.props.showMenu);
+        this.props.toggleMenu(!this.props.showMenu);
+    }
+
     render() {
         return (
             <div className='menu-icon' onClick={this.toggleMenu}>
@@ -22,4 +25,8 @@ class MenuIcon extends Component {
     }
 }
 
-export default MenuIcon;
+function mapStateToProps(state) {
+    return {showMenu: state.showMenu};
+}
+
+export default connect(mapStateToProps, {toggleMenu})(MenuIcon);

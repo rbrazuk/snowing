@@ -4,23 +4,20 @@ import Home from './components/Home';
 import IconsBar from './components/IconsBar';
 import MenuOverlay from './components/MenuOverlay';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { connect } from 'react-redux';
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {showMenu: false};
-  }
-
-  showMenuCallback = (show) => {
-    this.setState({showMenu: !this.state.showMenu});
+    console.log(props);
   }
   
   render() {
     return (
       <BrowserRouter>
         <div className="app">
-          {this.state.showMenu && <MenuOverlay />}
+          <MenuOverlay />
           <MenuIcon />
           <Switch>
             <Route path="/" component={Home}/>
@@ -33,4 +30,9 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+  return {showMenu: state.showMenu};
+}
+
+export default connect(mapStateToProps)(App);
+
