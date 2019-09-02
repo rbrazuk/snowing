@@ -8,23 +8,17 @@ class MenuOverlay extends Component {
         console.log(props);
     }
     render() {
-        
-        if (this.props.showMenu) {
-            return (
-                <div className='menu-overlay'>
-                    <ul className='menu'>
-                        <li>news</li>
-                        <li>shows</li>
-                        <li>music</li>
-                        <li>merch</li>
-                        <li>contact</li>
-                    </ul>
-                </div>
-            )
-        } else {
-            return null;
-        }
-        
+        return (
+            <div className='menu-overlay'>
+                <ul className='menu'>
+                    <li>news</li>
+                    <li>shows</li>
+                    <li>music</li>
+                    <li>merch</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+        )      
     }
 }
 

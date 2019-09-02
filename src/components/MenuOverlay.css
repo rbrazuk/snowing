@@ -8,6 +8,28 @@
     height: 100vh;
     background-color: rgba(255, 255, 255, .85);
     text-align: center;
+    opacity: 1;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    transition-delay: 250ms;
+}
+
+.fade-enter {
+    opacity: .01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+    opacity: 0.1;
+    transition: opacity 300ms ease-in;
 }
 
 .menu {

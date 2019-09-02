@@ -10,14 +10,14 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
   }
-  
+
   render() {
+    console.log("app rendered");
     return (
       <BrowserRouter>
         <div className="app">
-          <MenuOverlay />
+          {this.props.showMenu ? <MenuOverlay /> : null}
           <MenuIcon />
           <Switch>
             <Route path="/" component={Home}/>
