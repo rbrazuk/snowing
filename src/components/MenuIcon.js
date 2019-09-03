@@ -8,7 +8,7 @@ class MenuIcon extends Component {
         super(props);
 
         this.toggleMenu = this.toggleMenu.bind(this);
-        //console.log(this.props);
+        this.props.toggleMenu(false);
     }
 
     toggleMenu() {

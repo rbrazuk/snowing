@@ -1,0 +1,16 @@
+.news {
+    margin: 0 10px;
+}
+
+.news-item {
+    padding: 0 10px;;
+    background-color: #c8d5b9;
+}
+
+.news-item-date {
+    font-weight: bold;
+}
+
+.news-item-body {
+    line-height: 1.5em;
+}
