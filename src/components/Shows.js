@@ -3,7 +3,11 @@ import './Shows.css';
 
 class Shows extends Component {
     render() {
-        return <div>Shows</div>
+        return (
+            <div>
+                <div>Shows</div>
+            </div>
+        );
     }
 }
 

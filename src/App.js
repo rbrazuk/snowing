@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import MenuIcon from './components/MenuIcon';
 import Home from './components/Home';
+import BandName from './components/BandName';
 import IconsBar from './components/IconsBar';
 import News from './components/News';
 import Shows from './components/Shows';
@@ -13,10 +14,12 @@ import './App.css';
 
 class App extends Component {
   render() {
+    var pathName = window.location.pathname;
     return (
       <BrowserRouter>
         <div className="app">
           {this.props.showMenu ? <MenuOverlay /> : null}
+          {pathName !== '/' ? <BandName /> : null} 
           <MenuIcon />
           <Switch>
             <Route path='/news' component={News}/>

@@ -27,7 +27,6 @@ class MenuOverlay extends Component {
             </div>
         );      
     }
-    
 }
 
 function mapStateToProps(state) {

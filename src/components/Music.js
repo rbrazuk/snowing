@@ -3,7 +3,11 @@ import './Music.css';
 
 class Music extends Component {
     render() {
-        return <div>Music</div>
+        return (
+            <div>
+                <div>music</div>
+            </div>
+        );
     }
 }
 
