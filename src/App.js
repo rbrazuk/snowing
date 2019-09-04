@@ -4,6 +4,8 @@ import Home from './components/Home';
 import IconsBar from './components/IconsBar';
 import News from './components/News';
 import Shows from './components/Shows';
+import Music from './components/Music';
+import Contact from './components/Contact';
 import MenuOverlay from './components/MenuOverlay';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -19,6 +21,8 @@ class App extends Component {
           <Switch>
             <Route path='/news' component={News}/>
             <Route path='/shows' component={Shows} />
+            <Route path='/music' component={Music} />
+            <Route path='/contact' component={Contact} />
             <Route path="/" component={Home}/>
           </Switch>
           <IconsBar />
