@@ -10,6 +10,7 @@
 .home-image {
     width :75%;
     border-radius: 50%;
+    margin: 10px 0;
 }
 
 .band-name {
@@ -21,4 +22,8 @@
 
 .bio {
     font-size: 12px;
+}
+
+.app {
+    padding: 0 10px;
 }
