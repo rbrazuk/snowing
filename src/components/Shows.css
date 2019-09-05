@@ -24,6 +24,9 @@
     display: block;
     border: none;
     background-color: #8fc0a9;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
     width: 70px;
     margin-bottom: 10px;
     padding: 8px;
