@@ -8,7 +8,7 @@ class Home extends Component {
             <div className='home'>
                 <h1 className='band-name'>snowing</h1>
                 <img className='home-image' src={homeImage} alt='Snowing'/>    
-                <p className='bio'>emotional rock music from philadelphia</p>          
+                <p className='bio'>philadelphia, pa</p>          
             </div>
         );
     }

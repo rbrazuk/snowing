@@ -23,8 +23,6 @@ class ShowsList extends Component {
                             <button>tickets</button>
                         </a>
                     </div>
-                    
-                    
                 </div>
             );
         })

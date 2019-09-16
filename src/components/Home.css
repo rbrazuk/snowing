@@ -27,3 +27,25 @@
 .app {
     padding: 0 10px;
 }
+
+@media screen and (min-width: 480px) {
+    
+  }
+
+@media screen and (min-width: 768px) {
+    .home-image{
+        width: 50%;
+    } 
+
+    .bio {
+        font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    
+  }

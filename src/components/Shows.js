@@ -7,8 +7,9 @@ class Shows extends Component {
     render() {
         console.log(shows);
         return (
-            <div>
+            <div className='shows'>
                 <ShowsList shows={shows} />
+                <button className='past-shows-button'>show past shows</button>
             </div>
         );
     }
