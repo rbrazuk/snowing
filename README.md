@@ -1,11 +1,6 @@
 ## How to run
 
-In the project directory run:
-`npm install`
-
-then run
-
-`npm start`
+In the project directory run: `npm install`. Then run `npm start`.
 
 Open [http://localhost:3000](http://localhost:3000) to view it!
 
