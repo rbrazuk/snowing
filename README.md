@@ -1,6 +1,8 @@
 ## How to run
 
-In the project directory run: `npm install`. Then run `npm start`.
+Make sure you've got Node installed, first and foremost - https://nodejs.org/en/
+
+If so, in the project directory, run: `npm install` and then `npm start`.
 
 Open [http://localhost:3000](http://localhost:3000) to view it!
 
